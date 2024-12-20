@@ -28,6 +28,9 @@ pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --e
 pip install -r requirements.txt
 ```
 
+For Non-Maximum Suppression (NMS) Library, please refer to the guidance provided in the ActionFormer documentation, which can be found here: [ActionFormer Installation Guide](https://github.com/happyharrycn/actionformer_release/blob/main/INSTALL.md).
+
+
 ## data
 111
 ### access
