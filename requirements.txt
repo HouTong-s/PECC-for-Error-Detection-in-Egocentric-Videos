@@ -20,7 +20,6 @@ mkl-service==2.4.0
 munch==4.0.0
 munkres==1.1.4
 networkx==3.1
-nms-1d-cpu==0.0.0
 opencv-python==4.7.0.72
 pandas==1.5.2
 Pillow==9.4.0
@@ -36,11 +35,7 @@ ruamel.yaml.clib==0.2.8
 scikit-learn==1.2.1
 scipy==1.10.0
 threadpoolctl==3.1.0
-torch==1.13.1
 torch-geometric==2.6.1
-torch-kmeans==0.2.0
-torchaudio==0.13.1
-torchvision==0.14.1
 tqdm==4.66.5
 webencodings==0.5.1
 yacs==0.1.8
