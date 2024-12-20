@@ -16,7 +16,7 @@ This codebase has been developed and validated under the following environment:
 - **Python:** 3.8
 - **PyTorch:** 1.13.1
 - **CUDA:** 11.7
-- **GPU:** NVIDIA A6000 with 48 GB of VRAM
+- **GPU:** 48GB NVIDIA A6000
 
 ### Setup
 
