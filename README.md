@@ -41,34 +41,52 @@ For **EgoPER**: To obtain the dataset, please visit [EgoPER Official Repository]
 For **HoloAssist**: To access this dataset, please refer to [HoloAssist Official Website](https://holoassist.github.io/).
 ### Preprocessing Steps
 1. **Extract Frames at 10 FPS:**
-   Navigate to the preprocessing directory and run the following command to extract frames at 10 frames per second (FPS):
-   
-   cd preprocessing
-   python extract_frames.py
-   
+Navigate to the preprocessing directory and run the following command to extract frames at 10 frames per second (FPS):
+
+```bash
+cd preprocessing
+python extract_frames.py
+```   
 
 2. **Generate I3D Features:**
-   Use the extracted frames to generate I3D features. Download the pre-trained weights from the following link: [Pre-trained Weights for I3D](https://drive.google.com/file/d/1SF4NduQ7w08wP00IgftZjnRqRYRdppd6/view).
-   After downloading, move the weights to the directory:
-   
-   I3D_extractor/src/feature_extractor/pretrained_models
+Use the extracted frames to generate I3D features. Download the pre-trained weights from the following link: [Pre-trained Weights for I3D](https://drive.google.com/file/d/1SF4NduQ7w08wP00IgftZjnRqRYRdppd6/view).
+After downloading, move the weights to the directory:
+
+I3D_extractor/src/feature_extractor/pretrained_models
    
 
 3. **Modify Configuration Script:**
-   Open the script features_{task_name}.sh and change the root_dir variable to the correct path where your data is located (e.g., data/EgoPER/pinwheels).
+Open the script features_{task_name}.sh and change the root_dir variable to the correct path where your data is located (e.g., data/EgoPER/pinwheels).
 4. **Run Feature Extraction:**
-   Create a directory to store the extracted features and execute the feature extraction script:
-   
-   mkdir -p data/EgoPER/pinwheels/features_10fps
-   cd I3D_extractor
-   ./features_pin.sh
-   
+Create a directory to store the extracted features and execute the feature extraction script:
+
+```bash
+mkdir -p data/EgoPER/pinwheels/features_10fps
+cd I3D_extractor
+./features_pin.sh
+```   
 
 Following these steps will allow you to preprocess the data and generate the necessary features for your experiment.
 
 ## Training
-222
+for EgoPER 
+```bash
+bash ./tools/EgoPER/run_train.sh
+```
+
+for HoloAssist
+```bash
+bash ./tools/EgoPER/run_train.sh
+```
 
 ## Inference
-333
+for EgoPER 
+```bash
+bash ./tools/EgoPER/run_test.sh
+```
+
+for HoloAssist
+```bash
+bash ./tools/EgoPER/run_test.sh
+```
 
