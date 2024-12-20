@@ -1,8 +1,8 @@
 # PECC-for-Error-Detection-in-Egocentric-Videos
 
-[data](#data)
-[Training](#Training)
-[Inference](#Inference)
+[data](#data)  
+[Training](#Training)   
+[Inference](#Inference)   
 
 ## Introduction
 
