@@ -3,14 +3,15 @@
 
 This is the source code of "Probabilistic Embeddings with Causal Constraint for Error Detection in Egocentric Procedural Videos"
 
-## 1
+## data
 111
+### Preparation
 
-## 2 
+### Preprocessing
+
+## Training
 222
 
-## 3
+## Inference
 333
 
-## 4
-444
