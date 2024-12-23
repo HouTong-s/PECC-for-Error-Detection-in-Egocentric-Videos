@@ -9,7 +9,8 @@ This is the source code of "Probabilistic Embeddings with Causal Constraint for 
 
 ## Introduction
 
-Our overall framework of the proposed **Probabilistic Embeddings with Causal Constraint (PECC)** method consists of two key components: **Causal Dilated Convolution (CDC)**, which integrates causal constraints into the temporal action segmentation model, and **Gaussian-Based Probabilistic Modeling (GBP)** for modeling normal actions to improve error detection in egocentric procedural videos.
+Our overall framework of the proposed **Probabilistic Embeddings with Causal Constraint (PECC)** method consists of two key components: **Causal Dilated Convolution (CDC)**, which integrates causal constraints into the temporal action segmentation model, and **Gaussian-Based Probabilistic Modeling (GBP)**, which utilizes Gaussian Mixture Models (GMMs) for modeling normal actions to improve error detection in egocentric procedural videos.
+
 
 ![Image Description](figs/Fig2.png)
 
@@ -55,40 +56,16 @@ For Non-Maximum Suppression (NMS) Library, please refer to the guidance provided
 
 
 ### Data
-This experiment utilizes two datasets: EgoPER and HoloAssist. You have the option to either use the pre-extracted feature files that we provide (available via a Google Drive link) or to extract features yourself using the original data processing methods described below.
-#### Feature File Description
-(Provide details about the feature files here, including information on the format, dimensions, and any relevant statistics that would be useful to the user.)
+This experiment utilizes two datasets: **EgoPER** and **HoloAssist**. You have the option to either use the pre-extracted feature files provided by us (available via a Google Drive link) or extract features yourself using the original data processing methods described below.
+
+#### Pre-Extracted Features
+We provide 10FPS extracted features for both the **EgoPER** and **HoloAssist** datasets, using the data preprocessing pipeline described in the [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official). Specifically, the raw video data was resampled to 10 frames per second (10FPS), and the features were extracted using the I3D model. The features can be downloaded from the [Google Drive link].
+
 #### Original Data Processing
-For **EgoPER**: To obtain the dataset, please visit [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official).
-For **HoloAssist**: To access this dataset, please refer to [HoloAssist Official Website](https://holoassist.github.io/).
-#### Preprocessing Steps
-1. **Extract Frames at 10 FPS:**
-Navigate to the preprocessing directory and run the following command to extract frames at 10 frames per second (FPS):
+To process the raw datasets into 10FPS features:
+- For **EgoPER**, refer to the [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official) for both dataset access and detailed instructions.
+- For **HoloAssist**, visit the [HoloAssist Official Website](https://holoassist.github.io/) for dataset access and related documentation.
 
-```bash
-cd preprocessing
-python extract_frames.py
-```   
-
-2. **Generate I3D Features:**
-Use the extracted frames to generate I3D features. Download the pre-trained weights from the following link: [Pre-trained Weights for I3D](https://drive.google.com/file/d/1SF4NduQ7w08wP00IgftZjnRqRYRdppd6/view).
-After downloading, move the weights to the directory:
-
-I3D_extractor/src/feature_extractor/pretrained_models
-   
-
-3. **Modify Configuration Script:**
-Open the script features_{task_name}.sh and change the root_dir variable to the correct path where your data is located (e.g., data/EgoPER/pinwheels).
-4. **Run Feature Extraction:**
-Create a directory to store the extracted features and execute the feature extraction script:
-
-```bash
-mkdir -p data/EgoPER/pinwheels/features_10fps
-cd I3D_extractor
-./features_pin.sh
-```   
-
-Following these steps will allow you to preprocess the data and generate the necessary features for your experiment.
 
 ### Training
 for EgoPER 
