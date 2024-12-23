@@ -9,6 +9,8 @@
 
 This is the source code of "Probabilistic Embeddings with Causal Constraint for Error Detection in Egocentric Procedural Videos"
 
+Our overall framework of the proposed **Probabilistic Embeddings with Causal Constraint (PECC)** method. It consists of two key components: **Causal Dilated Convolution (CDC)**, which integrates causal constraints into the temporal action segmentation model, and **Gaussian-Based Probabilistic Modeling (GBP)** for modeling normal actions to improve error detection in egocentric procedural videos.
+
 ![Image Description](figs/图2.png)
 
 ![Image Description](figs/EgoPER.png)
