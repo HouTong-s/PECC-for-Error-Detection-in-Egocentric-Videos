@@ -9,6 +9,13 @@
 
 This is the source code of "Probabilistic Embeddings with Causal Constraint for Error Detection in Egocentric Procedural Videos"
 
+![Image Description](figs/图2.png)
+
+![Image Description](figs/EgoPER.png)
+
+![Image Description](figs/HoloAssist.png)
+
+
 ## Environment
 
 This codebase has been developed and validated under the following environment:
