@@ -13,7 +13,9 @@ This is the source code of "Probabilistic Embeddings with Causal Constraint for 
 
 ![Image Description](figs/EgoPER.png)
 
-<img src="figs/HoloAssist.png" alt="Image Description" width="300" />
+<p align="center">
+  <img src="figs/HoloAssist.png" alt="Image Description" width="500" />
+</p>
 
 
 ## Environment
