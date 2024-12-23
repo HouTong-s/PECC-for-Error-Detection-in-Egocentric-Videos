@@ -11,19 +11,27 @@ This is the source code of "Probabilistic Embeddings with Causal Constraint for 
 
 Our overall framework of the proposed **Probabilistic Embeddings with Causal Constraint (PECC)** method consists of two key components: **Causal Dilated Convolution (CDC)**, which integrates causal constraints into the temporal action segmentation model, and **Gaussian-Based Probabilistic Modeling (GBP)** for modeling normal actions to improve error detection in egocentric procedural videos.
 
-![Image Description](figs/图2.png)
+![Image Description](figs/Fig2.png)
 
 
 
 ## Results
 Our method achieves state-of-the-art (SOTA) results on both the EgoPED and HoloAssist datasets.
+
+Comparison with previous methods on the EgoPED dataset:  
 ![Image Description](figs/EgoPER.png)
 
+Comparison with previous methods on the HoloAssist dataset:  
 <p align="center">
   <img src="figs/HoloAssist.png" alt="Image Description" width="500" />
 </p>
 
-## Environment
+Visualization of our method compared to the EgoPED method from the CVPR 2024 paper on a specific use case:  
+![Image Description](figs/error_visual.png)
+
+## Experiment
+
+### Environment
 
 This codebase has been developed and validated under the following environment:
 - **OS:** Ubuntu 20.04.5 LTS
@@ -32,7 +40,7 @@ This codebase has been developed and validated under the following environment:
 - **CUDA:** 11.7
 - **GPU:** 48GB NVIDIA A6000
 
-### Setup
+#### Setup
 
 To set up the environment, please follow these steps:
 
@@ -46,14 +54,14 @@ pip install -r requirements.txt
 For Non-Maximum Suppression (NMS) Library, please refer to the guidance provided in the ActionFormer documentation, which can be found here: [ActionFormer Installation Guide](https://github.com/happyharrycn/actionformer_release/blob/main/INSTALL.md).
 
 
-## Data
+### Data
 This experiment utilizes two datasets: EgoPER and HoloAssist. You have the option to either use the pre-extracted feature files that we provide (available via a Google Drive link) or to extract features yourself using the original data processing methods described below.
-### Feature File Description
+#### Feature File Description
 (Provide details about the feature files here, including information on the format, dimensions, and any relevant statistics that would be useful to the user.)
-### Original Data Processing
+#### Original Data Processing
 For **EgoPER**: To obtain the dataset, please visit [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official).
 For **HoloAssist**: To access this dataset, please refer to [HoloAssist Official Website](https://holoassist.github.io/).
-### Preprocessing Steps
+#### Preprocessing Steps
 1. **Extract Frames at 10 FPS:**
 Navigate to the preprocessing directory and run the following command to extract frames at 10 frames per second (FPS):
 
@@ -82,7 +90,7 @@ cd I3D_extractor
 
 Following these steps will allow you to preprocess the data and generate the necessary features for your experiment.
 
-## Training
+### Training
 for EgoPER 
 ```bash
 bash ./tools/EgoPER/run_train.sh
@@ -93,7 +101,7 @@ for HoloAssist
 bash ./tools/EgoPER/run_train.sh
 ```
 
-## Inference
+### Inference
 for EgoPER 
 ```bash
 bash ./tools/EgoPER/run_test.sh
