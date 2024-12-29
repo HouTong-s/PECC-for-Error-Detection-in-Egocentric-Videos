@@ -57,7 +57,10 @@ For Non-Maximum Suppression (NMS) Library, please refer to the guidance provided
 ### Data
 This experiment utilizes two datasets: **EgoPER** and **HoloAssist**. You have the option to either use the pre-extracted feature files provided by us (available via a Google Drive link) or extract features yourself using the original data processing methods described below.
 #### Pre-Extracted Features
-We provide 10FPS extracted features for both the **EgoPER** and **HoloAssist** datasets, using the data preprocessing pipeline described in the [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official). Specifically, the raw video data was resampled to 10 frames per second (10FPS), and the features were extracted using the I3D model. Additionally, for the **EgoPER** dataset, we have included **Active Object Detection (AOD) information**, which is processed alongside RGB features as input to the model. We will soon make the pre-extracted feature files publicly available on Google Drive.
+We provide 10FPS extracted features for both the **EgoPER** and **HoloAssist** datasets, using the data preprocessing pipeline described in the [EgoPER Official Repository](https://github.com/robert80203/EgoPER_official). Specifically, the raw video data was resampled to 10 frames per second (10FPS), and the features were extracted using the I3D model. Additionally, for the **EgoPER** dataset, we have included **Active Object Detection (AOD) information**, which is processed alongside RGB features as input to the model. 
+We will soon make the pre-extracted feature files publicly available on Google Drive.
+The dataset weights for EgoPER can be found at this Google Drive link: 
+For HoloAssist, due to the large size of the dataset, we only provide the annotation and split files.
 #### Dataset File Structure
 The dataset files should be organized as follows:
 
