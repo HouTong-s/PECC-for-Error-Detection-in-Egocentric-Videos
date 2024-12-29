@@ -16,9 +16,9 @@ Our overall framework of the proposed **Probabilistic Embeddings with Causal Con
 
 
 ## Results
-Our method achieves state-of-the-art (SOTA) results on both the EgoPED and HoloAssist datasets.
+Our method achieves state-of-the-art (SOTA) results on both the EgoPER and HoloAssist datasets.
 
-Comparison with previous methods on the EgoPED dataset:  
+Comparison with previous methods on the EgoPER dataset:  
 ![Image Description](figs/EgoPER.png)
 
 Comparison with previous methods on the HoloAssist dataset:  
