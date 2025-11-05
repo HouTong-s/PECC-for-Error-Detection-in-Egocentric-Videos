@@ -4,7 +4,9 @@
 [Results](#Results)  
 [Experiment](#Experiment)   
 
-This is the source code for "Probabilistic Embeddings with Causal Constraint for Error Detection in Egocentric Procedural Videos", published in **ICME 2025**. [Paper PDF](ICME_2025_PECC.pdf)
+This is the source code for "Probabilistic Embeddings with Causal Constraint for Error Detection in Egocentric Procedural Videos", published in  Proceedings of the IEEE International Conference on Multimedia and Expo (ICME), 2025.
+
+[[IEEE Xplore]](https://ieeexplore.ieee.org/document/11209124) [[PDF]](ICME_2025_PECC.pdf)
 
 ## Introduction
 
